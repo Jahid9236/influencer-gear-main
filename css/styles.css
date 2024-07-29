@@ -7,9 +7,18 @@
     font-family: poppins, sans-serif;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 body{
     
 }
+
+
 
 /* navigation section starts here */
 
@@ -38,16 +47,125 @@ nav h3{
 
 /* banner section starts here */
 
-/* #banner{
+#banner-container{
     display: flex;
-    flex-wrap: wrap;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
+#banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+
 .banner-text-container{
-    flex-basis: 50%;
+    flex-basis: 47%;
+    flex-wrap: wrap;
 }
 
 .banner-img-container{
-    flex-basis: 50%;
-} */
+    flex-basis: 47%;
+    flex-wrap: wrap;
+}
+
+.banner-img-container img{
+    width: 50%;
+}
+
+.banner-btn{
+    padding: 10px 24px 10px 24px;
+    background-color: rgb(224, 44, 109);
+    color: white;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+/* logos secrtion */
+
+.logos-container{
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto 90px;
+}
+
+.logos-container a{
+    margin: 0 20px;
+}
+
+/* popular collection section */
+
+.popular-title{
+    color: rgb(58, 58, 58);
+    font-size: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popular-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.card-container{
+    padding: 10px 10px 50px 10px;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+.card-text{
+    margin: 10px 0;
+}
+
+.card-text h3{
+    color: rgb(24, 25, 31);
+    font-size: 1.5 rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text h4{
+    color: rgb(24, 25, 31);
+    font-size: 1.3 rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 10px;
+}
+
+.card-text p{
+    color: rgb(120, 120, 133);
+}
+
+.card-ratings{
+    margin-bottom: 10px;
+}
+
+.card-ratings span{
+    color: orange;
+}
+.ratings-number{
+    display: inline;
+    font-weight: 700;
+}
+
+.see-more{
+    position: absolute;
+    border: none;
+    right: 0;
+    bottom: -50px;
+}
+
+.see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
